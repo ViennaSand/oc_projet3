@@ -48,6 +48,6 @@ Vous pouvez utiliser n'importe quel client SQL (DBeaver, MySQL Workbench, etc.) 
 
 - **Hôte (Host)**: `localhost`
 - **Port**: `3307`
-- **Base de données (Database)**: `oc_projet_3` _(pensez à mettre le bon nom ici)_
+- **Base de données (Database)**: `oc_projet_3` 
 - **Utilisateur (User)**: `root`
-- **Mot de passe (Password)**: `un-mot-de-passe-simple` _(celui de votre docker-compose.yml que vous définirez dans ce fichier là)_
+- **Mot de passe (Password)**: `un-mot-de-passe-simple` (et oui j'adore les blagues nulles ;) )
