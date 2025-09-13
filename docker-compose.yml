@@ -1,0 +1,29 @@
+# Fichier de configuration pour lancer la base de données du projet
+version: '3.8'
+
+services:
+  db:
+    # On utilise la dernière image officielle de MySQL
+    image: mysql:latest
+
+    # On donne un nom au conteneur pour le retrouver facilement
+    container_name: oc_projet_3
+
+    # Redémarre automatiquement le conteneur si besoin
+    restart: always
+
+    # Variables d'environnement pour configurer MySQL
+    environment:
+      MYSQL_ROOT_PASSWORD: un-mot-de-passe-simple
+      # La base de données sera créée automatiquement si elle n'existe pas
+      MYSQL_DATABASE: oc_projet3 
+
+    # On mappe le port 3307 de la machine de l'étudiante au port 3306 du conteneur
+    ports:
+      - "3307:3306"
+
+    # C'est la partie magique : 
+    # On monte le fichier dump.sql dans un dossier spécial de Docker
+    # qui exécute automatiquement les scripts .sql au premier démarrage.
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
