@@ -1,0 +1,32 @@
+# Fichiers système spécifiques à macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Fichiers système spécifiques à Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Fichiers de configuration et dossiers des éditeurs de code et IDE courants
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Dossiers de dépendances et environnements virtuels Python
+# (utile si les étudiants étendent le projet avec du code)
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.pyc
+
+# Fichiers de log, de cache ou temporaires
+*.log
+*.cache
+*.tmp
+
+# Fichiers de configuration spécifiques à DBeaver ou autres clients SQL
+.dbeaver/
